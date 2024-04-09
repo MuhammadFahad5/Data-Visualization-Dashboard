@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Assessment</title>
+
+</head>
+<body>
+    <div class="mycontainer">
+
+        <!-- Side baar ........................ -->
+        <aside>
+            <div class="logo">
+                <img src="images/Logo.png" alt="logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href=""><i class="fa-solid fa-house"></i><Span>Dashboard</Span></a></li>
+                    <li><a href=""><i class="fa-solid fa-money-bill-transfer"></i></i><Span>Transactions</Span></a></li>
+                    <li><a href=""><i class="fas fa-user"></i></i><Span>Accounts</Span></a></li>
+                    <li><a href=""><i class="fa-solid fa-money-check-dollar"></i></i><Span>Investments</Span></a></li>
+                    <li><a href=""><i class="fa-solid fa-money-check-dollar"></i></i><Span>Credit Cards</Span></a></li>
+                    <li><a href=""><i class="fa-solid fa-hand-holding-dollar"></i></i><Span>Loan</Span></a></li>
+                    <li><a href=""><i class="fas fa-tools"></i></i><Span>Services</Span></a></li>
+                    <li><a href=""><i class="fas fa-file-invoice-dollar"></i></i><Span>My Privilleges</Span></a></li>
+                    <li><a href=""><i class="fa-solid fa-gear"></i><Span>Setting</Span></a></li>
+                </ul>
+            </nav>
+
+        </aside>
+
+        <!-- Main container ........................................... -->
+        <main>
+            <!-- Main Top ........................ -->
+            <div class="main-top">
+                <!-- <p>Investments</p> -->
+                <h1>Investments</h1>
+                <div class="main-top-right">
+                    <div class="search-bar">
+                        <button class="">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                        <form action="">
+                            <input type="input" placeholder="Search for something">
+                        </form>
+                    </div>
+
+                    <div class="top-icons">
+                        <div class="gear"><a href="#"><i class="fa-solid fa-gear"></i></a></div>
+                        <div class="ring"><a href="#"><i class="far fa-bell"></i></a></div>
+                        <div class="mask">
+                            <img src="images/mask.png" alt="">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Main Body ......................... -->
+            <div class="main-body">
+
+                <!-- Section No 1 ........................................ -->
+                <section class="section1">
+                    <div class="row px-2 px-sm-4">
+                        <div class="col-md-6 col-lg-4 pt-4">
+                            <div class="box">
+                                <div class="icon"><img src="images/money.png" alt="money"></div>
+                                <div class="data">
+                                    <p>Total invested amount</p>
+                                    <h4>$150,000</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 pt-4">
+                            <div class="box">
+                                <div class="icon"><img src="images/numbers.png" alt="money"></div>
+                                <div class="data">
+                                    <p>Number of Investments</p>
+                                    <h4>1250</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 pt-4">
+                            <div class="box">
+                                <div class="icon"><img src="images/rate.png" alt="money"></div>
+                                <div class="data">
+                                    <p>Rate of Return</p>
+                                    <h4>+5.80%</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Section No 2 ................................................ -->
+                <section class="section2">
+                    <div class="row px-2 px-sm-4">
+                        <div class="col-md-6 pt-4">
+                            <h3>Debit & Credit Overview</h3>
+                            <div class="box">
+                                <canvas id="doubleVerticalBarChart"></canvas>
+
+                            </div>
+
+                        </div>
+                        <div class="col-md-6 pt-4">
+                            <h3>Monthly Revenue</h3>
+                            <div class="box">
+                                <canvas id="lineChart"></canvas>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Section No 3 .................................................. -->
+                <section class="section3">
+                    <div class="row px-2 px-sm-4">
+                        <div class="col-md-7 pt-4">
+                            <h3>Contact Form</h3>
+                            <div class="box">
+                                <form>
+                                    <div>
+                                        <label for="email">Card Type</label>
+                                        <input type="email" id="email" name="name" placeholder="Email" required>
+                                    </div>
+                                    <div>
+                                        <label for="name">Name on Card</label>
+                                        <input type="text" id="name" name="password" placeholder="My Cards" required
+                                            minlength="2">
+                                    </div>
+                                    <div class="btn">
+                                        <button type="submit">Submit</button>
+                                    </div>
+                                </form>
+                            </div>
+
+                        </div>
+                        <div class="col-md-5 pt-4">
+                            <h3>Trending stock</h3>
+                            <div class="box">
+                                <table class="table table-borderless">
+                                    <thead>
+                                        <tr>
+                                            <th>SL NO</th>
+                                            <th>Name</th>
+                                            <th>Price</th>
+                                            <th>Return</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>01.</td>
+                                            <td>Anwer</td>
+                                            <td>$546</td>
+                                            <td class="plus">+5%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>02.</td>
+                                            <td>Shaikh</td>
+                                            <td>$516</td>
+                                            <td class="plus">+10%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>03.</td>
+                                            <td>Waheed</td>
+                                            <td>$546</td>
+                                            <td class="minus">-3%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>04.</td>
+                                            <td>Waheed</td>
+                                            <td>$546</td>
+                                            <td class="plus">+2%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>05.</td>
+                                            <td>Waheed</td>
+                                            <td>$546</td>
+                                            <td class="minus">-12%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>06.</td>
+                                            <td>Waheed</td>
+                                            <td>$546</td>
+                                            <td class="plus">+10%</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </section>
+            </div>
+
+        </main>
+    </div>
+
+    <script src="bootstrap/js/jquery-3.5.1.slim.min.js"> </script>
+    <script src="bootstrap/js/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script/bar-chart.js"></script>
+    <script src="script/line-chart.js"></script>
+
+</body>
+</html>
